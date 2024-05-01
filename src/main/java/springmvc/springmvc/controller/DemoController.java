@@ -11,9 +11,9 @@ import java.time.LocalDateTime;
 @Controller
 public class DemoController {
     //add mapping for "/hello"
-    @GetMapping("/hello")
+    @GetMapping("/hello_backup")
     public String sayHello(Model model){
         model.addAttribute("currentDate", LocalDateTime.now());
-        return HtmlTemplates.HELLO.getTemplate();
+        return HtmlTemplates.HELLO_BACKUP.getTemplate();
     }
 }
